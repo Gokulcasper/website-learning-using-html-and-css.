@@ -12,10 +12,10 @@ body {
 }
 
 .menu {
-  background: rgb(68, 221, 101);
-  height: 50px;
+  background: rgb(22, 190, 59);
+  height: 60px;
   width: 100%;
-  padding: 12;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +23,18 @@ body {
 .menu ul {
   display: inline-flex;
   list-style: none;
-  padding: 10px;
+  margin: 20px;
 }
 .menu ul li {
-  padding: 20px;
-  margin: 30px;
+  margin: 25px;
 }
 .menu ul li a {
   text-decoration: none;
-  color: aliceblue;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu ul li :hover {
+  background: rgb(112, 231, 112);
+  border-radius: 3px;
 }
