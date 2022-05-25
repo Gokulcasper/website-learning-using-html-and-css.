@@ -4,19 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+    <title>DropDown Menu Website</title>
     <link rel="stylesheet" href="Demo.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style></style>
   </head>
   <body>
     <div class="menu">
       <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li class="about"><a href="#">About Us</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Price</a></li>
-        <li><a href="#">Client</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active">
+          <a href="#"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i>About Us</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Customer Review</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Timing</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-clone"></i>Products</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-inr"></i>Price</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-users"></i>Client</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-phone"></i>Contact</a>
+        </li>
       </ul>
     </div>
   </body>

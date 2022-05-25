@@ -7,26 +7,22 @@
 body {
   background-image: url(./coco.jpg);
   background-size: cover;
-  box-sizing: border-box;
   font-family: sans-serif;
 }
 
 .menu {
-  background: rgb(22, 190, 59);
-  height: 60px;
-  width: 100%;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: rgb(18, 145, 219);
+  text-align: center;
 }
 .menu ul {
   display: inline-flex;
   list-style: none;
-  margin: 20px;
+  color: #fff;
 }
 .menu ul li {
-  margin: 25px;
+  width: 120;
+  margin: 15px;
+  padding: 10px;
 }
 .menu ul li a {
   text-decoration: none;
@@ -34,7 +30,21 @@ body {
   padding: 10px;
 }
 
+.active,
 .menu ul li :hover {
-  background: rgb(112, 231, 112);
+  background: rgb(77, 162, 231);
   border-radius: 3px;
+}
+.menu .fa {
+  margin-right: 8px;
+}
+.sub-menu-1 {
+  display: none;
+}
+.menu ul li :hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -15px;
+  background: rgb(18, 145, 219);
 }
