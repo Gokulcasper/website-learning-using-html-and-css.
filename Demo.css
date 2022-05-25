@@ -11,7 +11,7 @@ body {
 }
 
 .menu {
-  background: rgb(18, 145, 219);
+  background: rgb(175, 253, 249);
   text-align: center;
 }
 .menu ul {
@@ -26,13 +26,13 @@ body {
 }
 .menu ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(10, 10, 10);
   padding: 10px;
 }
 
 .active,
 .menu ul li :hover {
-  background: rgb(77, 162, 231);
+  background: rgb(173, 218, 218);
   border-radius: 3px;
 }
 .menu .fa {
@@ -47,4 +47,15 @@ body {
   margin-top: 15px;
   margin-left: -15px;
   background: rgb(18, 145, 219);
+}
+.menu ul li :hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li :hover .sub-menu-1 ul li {
+  width: 150;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  text-align: left;
 }
