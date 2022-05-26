@@ -11,7 +11,7 @@ body {
 }
 
 .menu {
-  background: rgb(175, 253, 249);
+  background: rgb(42, 136, 5);
   text-align: center;
 }
 .menu ul {
@@ -20,42 +20,55 @@ body {
   color: #fff;
 }
 .menu ul li {
-  width: 120;
-  margin: 15px;
+  width: 150px;
+  margin: 10px;
   padding: 10px;
 }
 .menu ul li a {
   text-decoration: none;
   color: rgb(10, 10, 10);
-  padding: 10px;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 
 .active,
-.menu ul li :hover {
-  background: rgb(173, 218, 218);
-  border-radius: 3px;
+.menu ul li:hover {
+  background: rgb(71, 240, 85);
+  border-radius: 5px;
 }
 .menu .fa {
   margin-right: 8px;
 }
+
 .sub-menu-1 {
   display: none;
 }
-.menu ul li :hover .sub-menu-1 {
+
+.menu ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
+  background: rgb(42, 136, 5);
   margin-top: 15px;
   margin-left: -15px;
-  background: rgb(18, 145, 219);
 }
-.menu ul li :hover .sub-menu-1 ul {
+.menu ul li:hover .sub-menu-1 ul {
   display: block;
-  margin: 10px;
+  margin: 5px;
 }
-.menu ul li :hover .sub-menu-1 ul li {
+.menu ul li:hover .sub-menu-1 ul li {
   width: 150;
   padding: 10px;
-  border-bottom: 1px solid #fff;
   background: transparent;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
   text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li a:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover {
+  color: greenyellow;
+}
+.fa-angle-right {
+  float: right;
 }
